@@ -9,7 +9,7 @@ class RuleEngine:
             if rule.evaluate(transaction):
                 results.append({
                     "flagged": True,
-                    "reason": rule.reason()
+                    "reason": rule.reason(transaction)
                 })
 
         if not results:

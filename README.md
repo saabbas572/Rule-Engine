@@ -17,6 +17,12 @@ This project implements a basic rule engine that evaluates transactions against 
 - `src/main.py`
   - Creates a sample transaction, configures rules, runs the engine, and prints the result.
 
+## Recent Update
+
+- Previous: sample transaction was `amount=9000`, `country="Canada"`, and the rule only checked thresholds.
+- Now: sample transaction is `amount=15000`, `country="IRAN"`, and `LargeTransactionRule` also evaluates sanctioned country criteria.
+- This update documents the engine behavior change and makes the sample data match the new rule conditions.
+
 ## Usage
 
 From the repository root:
